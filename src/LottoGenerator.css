@@ -1,0 +1,44 @@
+* {
+}
+
+.lotto h1 {
+    font-size: 3em;
+}
+.lotto p {
+    font-size: 20px;
+}
+
+.numbers {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.numbers li {
+    border: 2px solid dodgerblue;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    display: flex;
+    outline: 1px solid red;
+    text-align: center;
+}
+
+.button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: 2px solid dodgerblue;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.one {
+    color: dodgerblue;
+}
+
+.two {
+    color: #fff;
+    font-weight: bolder;
+    background-color: dodgerblue;
+}
