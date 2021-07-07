@@ -23,6 +23,7 @@
     display: flex;
     outline: 1px solid red;
     text-align: center;
+    text-align: center;
 }
 
 .button {
@@ -31,6 +32,7 @@
     border: 2px solid dodgerblue;
     border-radius: 5px;
     font-size: 1.2em;
+    margin-bottom: 40px;
 }
 
 .one {
@@ -41,4 +43,15 @@
     color: #fff;
     font-weight: bolder;
     background-color: dodgerblue;
+}
+
+.box {
+    border: solid black 2px;
+    border-radius: 50%;
+    padding: 30px;
+    margin-right: 10px;
+}
+
+.big-box {
+  margin-bottom: 60px;
 }
