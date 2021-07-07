@@ -1,0 +1,59 @@
+.lotto h1 {
+    font-size: 3em;
+}
+
+.lotto p {
+    font-size: 20px;
+}
+
+.button {
+    margin-left: 10px;
+    margin-bottom: 40px;
+    border: 2px solid #b4caec;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+}
+
+.one {
+    color: #b4caec;
+}
+
+.two {
+    font-weight: bolder;
+    color: #fff;
+    background-color: #b4caec;
+}
+
+.button:focus {
+    outline: 5px solid #32a2ce2f;
+}
+
+.two:active {
+    background-color: #8da4c7;
+}
+
+.big-box {
+    margin: 20px;
+
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.big-box :last-child {
+    background-color: #b4caec;
+}
+
+.box {
+    border: solid 1px #b4caec;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    font-size: 1.3em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
