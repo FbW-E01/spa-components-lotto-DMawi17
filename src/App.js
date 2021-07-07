@@ -1,5 +1,5 @@
 import "./App.css";
-import LottoGenerator from "./LottoGenerator";
+import LottoGenerator from "./Component/LottoGenerator";
 
 function App() {
     return (
