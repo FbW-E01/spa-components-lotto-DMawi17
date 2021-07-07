@@ -7,13 +7,13 @@ class LottoGenerator extends React.Component {
         this.state = {
             title: "Lotto 6 / 49",
             message: "Generating lucky numbers",
-            myKey: [],
+            objKey: [],
             specialNum: null,
         };
     }
 
     reset = () => {
-        this.setState({ myKey: [], specialNum: null });
+        this.setState({ objKey: [], specialNum: null });
     };
 
     generate = () => {
@@ -21,9 +21,11 @@ class LottoGenerator extends React.Component {
         const randomNumOfSix = emptyArrayOfSix
             .fill()
             .map(() => Math.floor(Math.random() * 50) + 1);
-        this.setState(
-            this.setState({ myKey: randomNumOfSix})
-        );
+
+        const lastChild = Math.floor(Math.random() * 10) + 1;
+        const randomNumOfSeven = [...randomNumOfSix, lastChild];
+
+        this.setState(this.setState({ objKey: randomNumOfSeven }));
     };
 
     render() {
@@ -31,9 +33,9 @@ class LottoGenerator extends React.Component {
             <div className="lotto">
                 <h1>{this.state.title}</h1>
                 <p>{this.state.message}</p>
-                <div>
-                    {this.state.myKey.map((x) => (
-                        <span className="box">{x}</span>
+                <div className="big-box">
+                    {this.state.objKey.map((n) => (
+                        <span className="box">{n}</span>
                     ))}
                 </div>
 
